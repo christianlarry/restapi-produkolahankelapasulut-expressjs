@@ -29,7 +29,7 @@ router.get('/toko/pending/post-by/:id',TokoController.getPendingTokoByPostById)
 router.get('/toko/:id',TokoController.getDataById)
 router.get('/toko/:id/produk',TokoController.getProdukByTokoId)
 
-router.post('/toko',validation,TokoController.postData)
+router.post('/toko',checkRole('admin'),validation,TokoController.postData)
 router.put('/toko/:id',checkRole('admin'),validation,TokoController.putData)
 router.delete('/toko/:id',checkRole('admin'),TokoController.deleteData)
 

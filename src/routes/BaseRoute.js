@@ -7,7 +7,7 @@ router.get('/',(req,res)=>{
 
 router.get('/api',(req,res)=>{
   res.status(200).json({
-      message: 'Rest API oleh kelompok 1'
+      message: 'POKSU (Produk Olahan Kelapa di Sulawesi Utara) Rest API oleh kelompok 1'
   })
 })
 
